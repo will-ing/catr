@@ -9,12 +9,11 @@ The CLI app that mimics echo, but written in rust
 You have the option -n to omit newline, To use in bash enter:
 
 ```terminal
-
+cargo build --release
+target/release/catr <filename>
+```
 
 or with cargo
-
-
-```
 
 To export output to file:
 
@@ -31,6 +30,7 @@ cargo run -- -n hello world > file.txt
 - clap
 - assert_cmd
 - predicates
+- rand
 
 ---
 
@@ -74,7 +74,7 @@ cargo test
 ## Authors
 
 Will Koger\
-March 2022
+April 2022
 
 ## References
 
